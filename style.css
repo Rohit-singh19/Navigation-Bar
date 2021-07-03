@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #e7524c;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    clip-path: circle(30px at 90%  50px);
+    transition: all 0.3s ease-in-out;
+}
+
+.active.menu{
+    clip-path: circle(150% at 90%  50px);
+}
+
+.menu i{
+    position: absolute;
+    top: 38px;
+    right: calc(10% - 9px);
+    font-size: 1.5rem;
+}
+
+.menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 2rem 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.menu ul li:hover{
+    border: 2px solid #833ab4;
+    box-shadow: 0 0 20px #833ab4;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+header{
+    max-width: 90%;
+    height: 100px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.logo span{
+    color: black;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #000000;
+}
